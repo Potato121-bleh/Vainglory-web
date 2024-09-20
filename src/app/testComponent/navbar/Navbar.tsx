@@ -8,7 +8,8 @@ const Navbar = () => {
   return (
     <div>
       <nav className=" text-white ">
-        <div className="container mx-auto flex justify-between items-center">
+        {/* mx-auto */}
+        <div className="container flex justify-between items-center -mx-[20px]">
           <div className="my-10">
             <Link href="/">
               <Image src={logo} width={200} height={150} alt="logo" />
@@ -23,7 +24,7 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href="/Hero"
+              href="testComponent/hero"
               className="ml-4 hover:bg-[#71869a] rounded-2xl px-6 py-2 hover:transition duration-700 ease-in-out"
             >
               Hero

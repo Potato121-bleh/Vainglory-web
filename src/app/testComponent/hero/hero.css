@@ -1,19 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* body {
+body {
   background-image: linear-gradient(to bottom right, #000000, #00274c, #454545);
   height: 100vh;
-} */
-/* .image-hero {
+}
+
+.image-hero {
   width: 100%;
   height: 100%;
   object-fit: cover;
   background: transparent;
   border-radius: 10px;
-} */
-body {
-  width: 80%;
-  margin: auto;
 }

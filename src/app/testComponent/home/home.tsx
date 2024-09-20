@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import "./home..css";
 import homeImg from "@/app/public/image/component/home/HomeImg.png";
 
 function HomePage() {
