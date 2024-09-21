@@ -1,0 +1,26 @@
+body {
+    background-image: linear-gradient(to bottom right, #000000, #00274c, #454545);
+    height: 99vh;
+    color: white;
+}
+
+@mixin package-flex-JAD($justify: 'normal', $align: 'normal', $direction: 'row'){
+    display:flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+.home-main-con {
+    margin-top: 20px;
+    @include package-flex-JAD(center);
+}
+
+.home-sub-con {
+    @include package-flex-JAD(space-between);
+    width: 80%;
+}
+.home-text-con {
+    @include package-flex-JAD(center, center, column);
+    padding-bottom: 20px;
+}
