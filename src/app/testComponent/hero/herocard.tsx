@@ -45,7 +45,7 @@ function hero({
           </div>
         ))}
       </div> */}
-      <div className="flex justify-center hover:scale-[105%] duration-500 ease-in-out">
+      <div className="flex justify-center hover:scale-[90%] duration-500 ease-in-out">
         <div className="w-[160px] h-[300px] m-4 opacity-100 ">
           <Image
             src={heroImg}
