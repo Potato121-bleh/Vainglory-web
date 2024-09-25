@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import "./hero.css";
+
 import { Modal } from "@mui/joy";
 import { Box } from "@mui/material";
 
@@ -40,7 +41,7 @@ function hero({
 
   return (
     <div className="flex justify-center">
-      <div className="relative w-[150px] h-[215px] m-4 opacity-100 herocard-con">
+      <div className="herocard-con relative w-[150px] h-[215px] m-4 opacity-100 ">
         <Image
           className="image-hero hover:scale-[105%] duration-500 ease-in-out cursor-pointer"
           onClick={handleClick}
