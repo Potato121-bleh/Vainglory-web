@@ -22,7 +22,7 @@ const itempage = () => {
                     backgroundColor: '#d73737',
                     textAlign: 'center',
                     padding: '10px',
-                    marginLeft: '0px',
+
                     color: 'black',
                 }}
             >
@@ -88,7 +88,7 @@ const itempage = () => {
                     backgroundColor: '#5db3c5',
                     textAlign: 'center',
                     padding: '10px',
-                    marginLeft: '0px',
+
                     color: 'black',
                 }}
             >
@@ -154,7 +154,7 @@ const itempage = () => {
                     backgroundColor: '#c2dd21',
                     textAlign: 'center',
                     padding: '10px',
-                    marginLeft: '0px',
+
                     color: 'black',
                 }}
             >
@@ -220,7 +220,7 @@ const itempage = () => {
                     backgroundColor: '#32b734',
                     textAlign: 'center',
                     padding: '10px',
-                    marginLeft: '0px',
+
                     color: 'black',
                 }}
             >
@@ -286,7 +286,7 @@ const itempage = () => {
                     backgroundColor: 'white',
                     textAlign: 'center',
                     padding: '10px',
-                    marginLeft: '0px',
+
                     color: 'black',
                 }}
             >
