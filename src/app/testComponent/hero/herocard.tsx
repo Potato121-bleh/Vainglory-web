@@ -57,7 +57,7 @@ function hero({
 
     return (
         <div className="flex justify-center">
-            <div className="relative w-[150px] h-[215px] m-4 opacity-100">
+            <div className=" herocard-con relative w-[150px] h-[215px] m-4 opacity-100">
                 <Image
                     className="image-hero hover:scale-[105%] duration-500 ease-in-out cursor-pointer"
                     onClick={handleClick}
@@ -66,7 +66,7 @@ function hero({
                     height={100}
                     alt="hero"
                 />
-                <div className="absolute text-center text-white font-bold translate-y-[-33px] p-1 opacity-100 text-[17px]  w-[150px] h-[37px] rounded-b-xl  bg-gradient-to-t from-black via-[#00274c] to-transparent">
+                <div className=" name-hero absolute text-center text-white font-bold translate-y-[-33px] p-1 opacity-100 text-[17px]  w-[150px] h-[37px] rounded-b-xl  bg-gradient-to-t from-black via-[#00274c] to-transparent">
                     {heroName}
                 </div>
                 <Modal

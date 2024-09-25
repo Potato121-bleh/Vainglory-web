@@ -1,11 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: auto;
-  height: auto;
   width: 100% !important;
+  height: auto !important;
   min-height: 99vh;
   background-image: linear-gradient(to bottom right, #000000, #00274c, #454545);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

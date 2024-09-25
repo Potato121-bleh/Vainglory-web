@@ -1,0 +1,119 @@
+.itempage-con {
+  height: auto;
+  min-height: 900px;
+  overflow-x: hidden;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* height: auto !important; */
+}
+.itempage-con-uti {
+  height: 700px;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.itempage-con-oth {
+  height: 500px;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.lineW1 {
+  width: 3px;
+  height: 750px;
+  background-color: white;
+  margin-left: 300px;
+  transform: translateY(-720px);
+  border-radius: 10px;
+}
+.lineW2 {
+  width: 3px;
+  height: 750px;
+  background-color: white;
+  transform: translate(300px, -480px);
+  border-radius: 10px;
+}
+/* .next-item-con {
+  margin-top: -700px;
+}
+.next-item-con2 {
+  margin-top: -500px;
+} */
+.lineCr1 {
+  width: 3px;
+  height: 750px;
+  background-color: white;
+  transform: translate(300px, -720px);
+  border-radius: 10px;
+}
+.lineCr2 {
+  width: 3px;
+  height: 750px;
+  background-color: white;
+  transform: translate(300px, -400px);
+  border-radius: 10px;
+}
+.lineDef1 {
+  width: 3px;
+  height: 820px;
+  background-color: white;
+  transform: translate(300px, -800px);
+  border-radius: 10px;
+}
+.lineDef2 {
+  width: 3px;
+  height: 820px;
+  background-color: white;
+  transform: translate(300px, -560px);
+  border-radius: 10px;
+}
+.lineUli1 {
+  width: 3px;
+  height: 570px;
+  background-color: white;
+  transform: translate(300px, -560px);
+  border-radius: 10px;
+}
+.lineUli2 {
+  width: 3px;
+  height: 570px;
+  background-color: white;
+  transform: translate(310px, -320px);
+  border-radius: 10px;
+}
+.lineOth1 {
+  width: 3px;
+  height: 350px;
+  background-color: white;
+  transform: translate(300px, -320px);
+  border-radius: 10px;
+}
+.lineOth2 {
+  width: 3px;
+  height: 350px;
+  background-color: white;
+  transform: translate(300px, -160px);
+  border-radius: 10px;
+}
+
+
+@media (max-width: 1150px) {
+  .all-item-con {
+    display:flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 770px) {
+  .itempage-con {
+    justify-content: center !important;
+  }
+}

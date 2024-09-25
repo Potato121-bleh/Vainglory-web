@@ -44,13 +44,13 @@ const Navbar = () => {
                         Home
                     </Link>
                     <Link
-                        href="/testComponent/hero"
+                        href="/hero"
                         className=" route-title ml-4 hover:bg-[#71869a] rounded-2xl px-6 py-2 hover:transition duration-700 ease-in-out"
                     >
                         Hero
                     </Link>
                     <Link
-                        href="/Items"
+                        href="/item"
                         className=" route-title ml-4 hover:bg-[#71869a] rounded-2xl px-6 py-2 hover:transition duration-700 ease-in-out"
                     >
                         Item
@@ -116,7 +116,7 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        href="/testComponent/hero"
+                                        href="/hero"
                                         className=" sidebar-route-title hover:bg-[#393f45] rounded-2xl transition duration-700 ease-in-out "
                                     >
                                         Hero
@@ -124,7 +124,7 @@ const Navbar = () => {
                                 </li>
                                 <li>
                                     <Link
-                                        href="/Items"
+                                        href="/item"
                                         className="  sidebar-route-title hover:bg-[#393f45] rounded-2xl transition duration-700 ease-in-out "
                                     >
                                         Item
