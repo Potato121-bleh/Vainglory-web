@@ -1,10 +1,85 @@
 .navbar {
   color: white;
   padding-top: 20px;
+  width: 80%;
+  margin: auto;
 }
 
 .sub-con {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.navbar-button {
+  font-size: 11px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.burger-icon {
+  display: none;
+  width: 35px;
+  height: 35px;
+  color: white;
+}
+
+.sidebar-img-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.sidebar-img-con div {
+  margin-left: 10px;
+}
+.sidebar-img-con div b {
+  font-size: 20px;
+}
+
+.sidebar-router-con {
+  margin-top: 15px;
+}
+.sidebar-router-con li {
+  margin: 15px;
+  margin-left: 10px;
+}
+
+.sidebar-route-title {
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 60%;
+}
+
+.sidebar-route-title-dev {
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 60%;
+}
+
+@media (max-width: 915px) {
+  .logo-con {
+    width: 100px;
+    height: 45px;
+  }
+  .route-title {
+    font-size: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 5px;
+  }
+  .navbar-button {
+    font-size: 9px;
+    padding: 7px;
+    margin-left: 15px;
+  }
+}
+@media (max-width: 560px) {
+  .route-con {
+    display: none;
+  }
+  .burger-icon {
+    display: block;
+  }
 }

@@ -1,0 +1,87 @@
+.main-dev-con {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+.main-dev-con .dev-title {
+  font-size: 25px;
+}
+
+.content-dev-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dev-box-con {
+  margin: 10px;
+  width: 500px;
+  padding: 10px;
+  border-radius: 15px;
+  border: solid rgba(255, 255, 255, 0.662);
+  box-shadow: 0px 2px 1px -1px rgba(255, 255, 255, 0.2), 0px 1px 1px 0px rgba(247, 247, 247, 0.14), 0px 1px 3px 0px rgba(255, 255, 255, 0.12);
+}
+
+.dev-top-profile-con {
+  display: flex;
+}
+.dev-top-profile-con .dev-text-profile-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.dev-top-profile-con .dev-text-profile-kimly-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 58px;
+}
+.dev-top-profile-con .dev-text-profile-tra-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 45px;
+}
+
+.lang-logo {
+  width: 25px;
+}
+
+.divider-con {
+  width: 2px;
+}
+
+.tra-img {
+  margin-left: 15px;
+  width: 80px;
+  height: 100px;
+}
+
+.theavin-img {
+  margin-left: 15px;
+  width: 68px;
+  height: 100px;
+}
+
+.kimly-img {
+  margin-left: 15px;
+  width: 68px;
+  height: 100px;
+}
+
+.lang-logo-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.lang-logo-con li {
+  margin: 5px;
+}
