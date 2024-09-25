@@ -1,79 +1,61 @@
 import React from "react";
-import hero1 from "@/app/public/image/hero/malene.png";
-import hero2 from "@/app/public/image/hero/2.jpg";
-import hero3 from "@/app/public/image/hero/3.jpg";
 import HeroCard from "@/app/testComponent/hero/herocard";
-import ReplySharpIcon from "@mui/icons-material/ReplySharp";
+import { hero } from "@/app/hero/datahero";
+import "../../hero/heropage.css";
 
 const heropage = () => {
-  const hero = [
-    {
-      id: "1",
-      img: hero1,
-      name: "Melene",
-    },
-    {
-      id: "2",
-      img: hero2,
-      name: "Layla",
-    },
-    {
-      id: "3",
-      img: hero3,
-      name: "Miya",
-    },
-    {
-      id: "4",
-      img: hero3,
-      name: "Bruno",
-    },
-    {
-      id: "6",
-      img: hero3,
-      name: "Selena",
-    },
-    {
-      id: "7",
-      img: hero3,
-      name: "Hanabi",
-    },
-    {
-      id: "8",
-      img: hero3,
-      name: "Grock",
-    },
-    {
-      id: "4",
-      img: hero3,
-      name: "Bruno",
-    },
-    {
-      id: "6",
-      img: hero3,
-      name: "Selena",
-    },
-    {
-      id: "7",
-      img: hero3,
-      name: "Hanabi",
-    },
-    {
-      id: "8",
-      img: hero3,
-      name: "Grock",
-    },
-    {
-      id: "4",
-      img: hero3,
-      name: "Bruno",
-    },
-  ];
-  //ml90
+  // const hero = [
+  //   {
+  //     id: 1,
+  //     img: "/hero/malene.png",
+  //     name: "Melene",
+  //   },
+  //   {
+  //     id: 2,
+  //     img: "/hero/malene.png",
+  //     name: "Layla",
+  //   },
+  //   {
+  //     id: 3,
+  //     img: "/hero/malene.png",
+  //     name: "Miya",
+  //   },
+  //   {
+  //     id: 4,
+  //     img: "/hero/malene.png",
+  //     name: "Bruno",
+  //   },
+  //   {
+  //     id: 6,
+  //     img: "/hero/malene.png",
+  //     name: "Selena",
+  //   },
+  //   {
+  //     id: 7,
+  //     img: "/hero/malene.png",
+  //     name: "Hanabi",
+  //   },
+  //   {
+  //     id: 8,
+  //     img: "/hero/malene.png",
+  //     name: "Grock",
+  //   },
+  //   {
+  //     id: 9,
+  //     img: "/hero/malene.png",
+  //     name: "Bruno",
+  //   },
+  //   {
+  //     id: 10,
+  //     img: "/hero/malene.png",
+  //     name: "Selena",
+  //   },
+  // ];
   return (
-    <div>
+    <div className="heropage">
       {" "}
       {/* ml-[230px] */}
-      <h1 className="text-gray-100 font-bold text-[38px] ml-[10px] mb-[20px]">
+      <h1 className=" text-gray-100 font-bold text-[38px] ml-[10px] mb-[20px] ">
         Hero
       </h1>
       {/* mx-[220px] */}
