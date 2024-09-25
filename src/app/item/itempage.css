@@ -16,6 +16,7 @@
   width: 80%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .itempage-con-oth {
@@ -24,6 +25,7 @@
   width: 80%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .lineW1 {
@@ -114,6 +116,12 @@
 
 @media (max-width: 770px) {
   .itempage-con {
+    justify-content: center !important;
+  }
+  .itempage-con-uti {
+    justify-content: center !important;
+  }
+  .itempage-con-oth {
     justify-content: center !important;
   }
 }

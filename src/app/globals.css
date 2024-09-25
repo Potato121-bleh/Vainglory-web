@@ -12,6 +12,4 @@ body {
   height: auto ;
   min-height: 99vh;
   background-image: linear-gradient(to bottom right, #000000, #00274c, #454545);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
