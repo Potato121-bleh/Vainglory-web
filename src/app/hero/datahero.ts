@@ -494,12 +494,12 @@ export const hero = [
   {
     id: 38,
     img: "/hero/phinn.png",
-    name: "Pninn",
+    name: "Phinn",
     role: "Protector",
     description:
       "Extremely tanky and can pull in enemies from across the screen",
     AttackType: "Melee",
-    offense: 146,
+    offense: 46,
     defense: 100,
     teamUtility: 97,
     mobility: 1,
