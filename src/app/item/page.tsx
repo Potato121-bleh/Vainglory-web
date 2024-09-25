@@ -1,6 +1,6 @@
 import React from 'react'
-import Tier from '@/app/testComponent/item/itemCard'
-import '@/app/testComponent/item/item.css'
+import Tier from '@/app/Component/item/itemCard'
+import '@/app/Component/item/item.css'
 import './itempage.css'
 import { weaponTier1, weaponTier2, weaponTier3 } from './data/weaponData'
 import { crystalTier1, crystalTier2, crystalTier3 } from './data/crystaldetail'
@@ -9,29 +9,6 @@ import { utilityTier1, utilityTier2, utilityTier3 } from './data/utilityData'
 import { otherTier1, otherTier2, otherTier3 } from './data/other'
 
 const itempage = () => {
-    // const weaponDataT1 = [
-    //   {
-    //     title: "Weapon Blade",
-    //     img: "/item/flare-gun.png",
-    //     cost: 300,
-    //   },
-    //   {
-    //     title: "Weapon Blade",
-    //     img: "/item/flare-gun.png",
-    //     cost: 300,
-    //   },
-    //   {
-    //     title: "Weapon Blade",
-    //     img: "/item/flare-gun.png",
-    //     cost: 300,
-    //   },
-    //   {
-    //     title: "Weapon Blade",
-    //     img: "/item/flare-gun.png",
-    //     cost: 300,
-    //   },
-    // ];
-
     return (
         <div className="all-item-con">
             {/* item weapon */}

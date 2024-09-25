@@ -166,7 +166,7 @@ export default function DevPage() {
                     <div className="dev-top-profile-con">
                         <Image
                             className="kimly-img"
-                            src="/profile/kimly.png"
+                            src="/profile/Kimly.png"
                             alt="Kimly img"
                             width={50}
                             height={120}

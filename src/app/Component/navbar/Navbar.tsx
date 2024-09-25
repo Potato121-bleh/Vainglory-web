@@ -39,36 +39,36 @@ const Navbar = () => {
                 <li className="route-con">
                     <Link
                         href="/"
-                        className=" route-title hover:bg-[#71869a] rounded-2xl px-6 py-2 transition duration-700 ease-in-out "
+                        className=" route-title hover:bg-[#71869a] rounded-2xl  transition duration-700 ease-in-out "
                     >
                         Home
                     </Link>
                     <Link
                         href="/hero"
-                        className=" route-title ml-4 hover:bg-[#71869a] rounded-2xl px-6 py-2 hover:transition duration-700 ease-in-out"
+                        className=" route-title hover:bg-[#71869a] rounded-2xl  hover:transition duration-700 ease-in-out"
                     >
                         Hero
                     </Link>
                     <Link
                         href="/item"
-                        className=" route-title ml-4 hover:bg-[#71869a] rounded-2xl px-6 py-2 hover:transition duration-700 ease-in-out"
+                        className=" route-title hover:bg-[#71869a] rounded-2xl  hover:transition duration-700 ease-in-out"
                     >
                         Item
                     </Link>
                     <Link
                         href="/developer"
-                        className=" route-title ml-4 hover:bg-[#71869a] rounded-2xl px-6 py-2 hover:transition duration-700 ease-in-out"
+                        className=" route-title hover:bg-[#71869a] rounded-2xl  hover:transition duration-700 ease-in-out"
                     >
                         Developer
                     </Link>
                     <Button
-                        className=" navbar-button ml-[50px] py-2 rounded-full "
+                        className=" navbar-button rounded-full "
                         variant="contained"
                     >
                         Play Now
                     </Button>
                 </li>
-                <li>
+                <div className="burger-icon-con">
                     <IconButton>
                         <LunchDining
                             onClick={handleOpenDrawer}
@@ -141,7 +141,7 @@ const Navbar = () => {
                             </ul>
                         </Box>
                     </Drawer>
-                </li>
+                </div>
             </ul>
         </nav>
     )

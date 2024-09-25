@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroCard from '@/app/testComponent/hero/herocard'
+import HeroCard from '@/app/Component/hero/herocard'
 import './heropage.css'
 import { hero } from './datahero'
 

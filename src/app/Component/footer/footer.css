@@ -129,35 +129,23 @@
 @media (max-width: 472px) {
   .list-logo-con {
     display: none;
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
   }
   .list-logo-con .pic {
     display: none;
-    width: 40px;
-    height: 40px;
   }
   .footer-con {
-    height: 200px;
+    height: 150px;
   }
   .text {
     font-size: 10px;
-    /* display: flex; */
-    justify-content: center;
+
     display: none;
   }
   .second-line {
     display: none;
-    font-size: 10px;
-    position: absolute;
-    margin-right: 70px;
-    padding-top: 10px;
   }
   .footer-logo {
     width: 150px;
-    transform: translateY(-250px);
   }
   .footer-logo .lg {
     object-fit: contain;
