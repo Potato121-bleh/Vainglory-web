@@ -81,9 +81,9 @@
     margin-left: 5px;
   }
   .navbar-button {
-    font-size: 9px;
-    padding: 7px;
-    margin-left: 10px;
+    font-size: 9px !important;
+    padding: 7px !important;
+    margin-left: 10px !important;
   }
 }
 @media (max-width: 720px) {
@@ -94,7 +94,7 @@
     margin-left: 5px;
   }
   .navbar-button {
-    margin-left: 10px;
+    margin-left: 10px !important;
   }
 }
 @media (max-width: 622px) {
