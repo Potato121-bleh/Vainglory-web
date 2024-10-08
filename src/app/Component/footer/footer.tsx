@@ -72,13 +72,21 @@ const footer = () => {
         </div>
       </div>
 
-      <p className="text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis facere
-        nihil fugiat. hjkhgagjkjkdjk
-        <span className="second-line">
-          quam sit ullam placeat hic mollitia numquam soluta eaque doloribus
-        </span>
-      </p>
+      {/* <div
+                className="text"
+                style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                }}
+            >
+                <p>
+                    Water in every direction is a terrifying luxury. <br />
+                    Truth goes unarmed, but I shall carry a spear
+                </p>
+                <p>By </p>
+                <b style={{ marginTop: '15px', fontSize: '17px' }}>Idris</b>
+            </div> */}
 
       <div className="footer-logo">
         <Image
