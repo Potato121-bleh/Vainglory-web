@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import "./hero.css";
-import { Modal, LinearProgress, Stack } from "@mui/joy";
+import { Modal, LinearProgress } from "@mui/joy";
 import { Box } from "@mui/material";
 
-type heroType = {
+type HeroType = {
   heroId: number;
   heroImg: string;
   heroName: string;
@@ -19,124 +19,107 @@ type heroType = {
   heroMobility: number;
 };
 
-function hero({
-  heroId,
-  heroImg,
-  heroName,
-  heroRole,
-  heroDescription,
-  heroAttackType,
-  heroOffense,
-  heroDefense,
-  heroUtility,
-  heroMobility,
-}: heroType) {
-  let [openModal, setOpenModal] = useState<boolean>(false);
+// function Hero({
+//   heroId,
+//   heroImg,
+//   heroName,
+//   heroRole,
+//   heroDescription,
+//   heroAttackType,
+//   heroOffense,
+//   heroDefense,
+//   heroUtility,
+//   heroMobility,
+// }: HeroType) {
+//   const [openModal, setOpenModal] = useState(false);
 
-  const handleClick = () => {
-    console.log("it said it OPEN  bro");
-    setOpenModal(true);
-  };
-  const handleClose = () => {
-    console.log("it said it CLOSES bro");
-    setOpenModal(false);
-  };
-
-  const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    minWidth: "350px",
-    width: "40%",
-    color: "black",
-    bgcolor: "background.paper",
-    boxShadow: 24,
-    p: 4,
-  };
+//   const style = {
+//     position: "absolute",
+//     top: "50%",
+//     left: "50%",
+//     transform: "translate(-50%, -50%)",
+//     width: "40%",
+//     minWidth: "350px",
+//     bgcolor: "background.paper",
+//     boxShadow: 24,
+//     p: 4,
+//   };
 
   return (
     <div className="flex justify-center">
-      <div className=" herocard-con relative w-[150px] h-[215px] m-4 opacity-100">
+      <<<<<<< HEAD
+      <div className="hero-card bg-blue-500 text-white">
         <Image
-          className="image-hero hover:scale-[105%] duration-500 ease-in-out cursor-pointer"
-          onClick={handleClick}
           src={heroImg}
+          alt={heroName}
           width={150}
-          height={100}
-          alt="hero"
+          height={200}
+          onClick={() => setOpenModal(true)}
         />
-        <div className=" name-hero absolute text-center text-white font-bold translate-y-[-33px] p-1 opacity-100 text-[17px]  w-[150px] h-[37px] rounded-b-xl  bg-gradient-to-t from-black via-[#00274c] to-transparent">
+
+        <h2 className="text-center font-bold mt-2">
           {heroName}
-        </div>
-        <Modal
-          open={openModal}
-          onClose={handleClose}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
-        >
-          <Box sx={style}>
-            <ul className="hero-profile-con">
-              <li>
-                <Image
-                  className="hero-img"
-                  src={heroImg}
-                  alt="hero image"
-                  width={90}
-                  height={120}
-                />
-              </li>
-              <li className="hero-profile-text-con">
-                <b>{heroName}</b>
-                <p>Role: {heroRole}</p>
-              </li>
-            </ul>
-            <p className="hero-description">{heroDescription}</p>
-            <ul className="hero-detail-con">
-              <ul>
-                <li>
-                  <b>Attack Type</b>
-                </li>
-                <li style={{ marginRight: "10px" }}>{heroAttackType}</li>
-              </ul>
-              <ul>
-                <li>
-                  <b>Offense</b>
-                </li>
-                <li className="linearprocess-con">
-                  <LinearProgress determinate value={heroOffense} />
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <b>Defense</b>
-                </li>
-                <li className="linearprocess-con">
-                  <LinearProgress determinate value={heroDefense} />
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <b>Team Utility</b>
-                </li>
-                <li className="linearprocess-con">
-                  <LinearProgress determinate value={heroUtility} />
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <b>Mobility</b>
-                </li>
-                <li className="linearprocess-con">
-                  <LinearProgress determinate value={heroMobility} />
-                </li>
-              </ul>
-            </ul>
-          </Box>
-        </Modal>
+        </h2>
       </div>
+      =======
+      <div className="hero-card bg-red-500 text-black">
+        <Image
+          src={heroImg}
+          alt="hero image"
+          width={170}
+          height={220}
+          onClick={() => setOpenModal(true)}
+        />
+
+        <h2 className="text-center italic mt-2">
+          {heroName} - {heroRole}
+        </h2>
+      </div>
+      >>>>>>> feature/new-hero-ui
+
+      <Modal
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+      >
+        <Box sx={style}>
+          <div className="flex gap-4">
+            <Image
+              src={heroImg}
+              alt={heroName}
+              width={100}
+              height={130}
+            />
+
+            <div>
+              <h1 className="font-bold text-2xl">
+                {heroName}
+              </h1>
+
+              <p>{heroRole}</p>
+            </div>
+          </div>
+
+          <p className="mt-4">{heroDescription}</p>
+
+          <div className="mt-4">
+            <p>Attack Type: {heroAttackType}</p>
+
+            <p>Offense</p>
+            <LinearProgress determinate value={heroOffense} />
+
+            <p>Defense</p>
+            <LinearProgress determinate value={heroDefense} />
+
+            <p>Utility</p>
+            <LinearProgress determinate value={heroUtility} />
+
+            <p>Mobility</p>
+            <LinearProgress determinate value={heroMobility} />
+          </div>
+        </Box>
+      </Modal>
     </div>
   );
 }
 
-export default hero;
+export default Hero;
