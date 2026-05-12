@@ -41,7 +41,6 @@
 //     </html>
 //   );
 // }
-<<<<<<< HEAD
 <div className="hero-card bg-blue-500 text-white">
   <Image
     src={heroImg}
@@ -51,22 +50,5 @@
     onClick={() => setOpenModal(true)}
   />
 
-  <h2 className="text-center font-bold mt-2">
-    {heroName}
-  </h2>
-</div>
-=======
-<div className="hero-card bg-red-500 text-black">
-  <Image
-    src={heroImg}
-    alt="hero image"
-    width={170}
-    height={220}
-    onClick={() => setOpenModal(true)}
-  />
-
-  <h2 className="text-center italic mt-2">
-    {heroName} - {heroRole}
-  </h2>
-</div>
->>>>>>> feature/new-hero-ui
+  <h2 className="text-center font-bold mt-2">{heroName}</h2>
+</div>;
